@@ -43,9 +43,13 @@ flask --app todopkg run
 - **POST** `/auth/register` - registers a user, expects a json with the following properties: `username`, `passwd`
 ### JSON properies
 `Authorization` - header for user authentication, structured like so: `Authorization: Basic base64_encode("username:passwd")`
+
 `brief` - Every task has a brief description, this is where it's provided.
+
 `detail` - Every task has a detailed description, this is where it's provided.
+
 `taskStatus` - Every task has a completion status (completed, in-progress, dropped, suspended) this is where it's provided.
+
 `id` - ID of the task to be modified
 ### URL parameters
 `detailed` - by default, the fetch view doesn't return detailed information about the listed task. When this parameter is present, more of the information is shown.
