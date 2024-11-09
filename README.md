@@ -53,6 +53,7 @@ flask --app todopkg run
 `id` - ID of the task to be modified
 ### URL parameters
 `detailed` - by default, the fetch view doesn't return detailed information about the listed task. When this parameter is present, more of the information is shown.
+
 `status` - allows filtering the fetching of articles by their status
 
 ## Contributing
